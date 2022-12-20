@@ -1,0 +1,79 @@
+/*
+===============
+section: obsession layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.obsession {
+    @include fw.bg-img('../../img/obsession_background-sp.png');
+    background-size: contain;
+    background-position: center 0%;
+    width: 100%;
+    padding: fw.vw(110) fw.vw(27) 0;
+    text-align: center;
+    
+    .obsession-title {
+        padding-bottom: fw.rem(30);
+    }
+    
+    .obsession-container {
+
+        .obsession-img {
+            width: fw.vw(320);
+        }
+
+        .obsession-container-title {
+            padding: fw.rem(22) 0 fw.rem(22)
+        }
+
+        .obsession-container-text {
+            text-align: left;
+        }
+    }
+
+    .obsession-container:nth-child(2) {
+        padding-top: fw.rem(50);
+    }
+}
+
+@include fw.rps-sw(pc) {
+    .obsession {
+        @include fw.bg-img('../../img/obsession_background-pc.png');
+        background-size: cover;
+        background-position: center 0%;
+        padding: fw.vw(204, 1440) fw.vw(200, 1440) fw.rem(280);
+
+        .obsession-title {
+            padding-bottom: fw.rem(87);
+        }
+        
+        .obsession-box {
+            display: flex;
+            gap: fw.rem(83);
+            @include fw.fl-center(xy);
+            
+            .obsession-container {
+        
+                .obsession-img {
+                    width: fw.vw(482, 1440);
+                    height: fw.vw(310, 1440);
+                    object-fit: cover;
+                }
+        
+                .obsession-container-title {
+                    padding: fw.rem(47) 0 fw.rem(37)
+                }
+        
+                .obsession-container-text {
+                    text-align: left;
+                }
+            }
+        
+            .obsession-container:nth-child(2) {
+                padding-top: 0;
+            }
+        }
+    }
+}

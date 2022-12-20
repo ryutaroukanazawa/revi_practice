@@ -1,0 +1,70 @@
+/*
+===============
+section: treatment layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.treatment {
+    width: 100%;
+    padding: fw.rem(87) 0 fw.rem(52);
+    text-align: center;
+
+    .treatment-title {
+        padding-bottom: fw.rem(141);
+    }
+
+    .treatment-container {
+        width: 100%;
+        height: fw.vw(411);
+        padding: fw.vw(139) fw.vw(27) fw.vw(42);
+        position: relative;
+
+        .treatment-text {
+            text-align: left;
+        }
+
+        .treatment-img {
+            width: fw.vw(320);
+            height: fw.vw(200);
+            object-fit: cover;
+            position: absolute;
+            @include fw.ps-center(x);
+            top: -23%;
+        }
+    }
+}
+
+@include fw.rps-sw(pc) {
+    .treatment {
+        width: 100%;
+        padding: fw.rem(66) 0 fw.rem(150);
+        text-align: center;
+    
+        .treatment-title {
+            padding-bottom: fw.rem(111);
+        }
+    
+        .treatment-container {
+            width: fw.vw(942, 1440);
+            height: fw.vw(470, 1440);
+            padding: fw.vw(75, 1440) fw.vw(60, 1440) fw.vw(75, 1440) fw.vw(197, 1440);
+            margin-left: fw.vw(334, 1440);
+            position: relative;
+    
+            .treatment-text {
+                text-align: left;
+            }
+    
+            .treatment-img {
+                width: fw.vw(309, 1440);
+                height: fw.vw(232, 1440);
+                object-fit: cover;
+                position: absolute;
+                @include fw.ps-center(y);
+                left: -19%;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+/*
+===============
+section: worries layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.worries {
+    width: 100%;
+    padding: fw.rem(69) 0 0 fw.vw(28);
+    text-align: center;
+
+    @include fw.rps-sw(pc) {
+        padding: fw.rem(94) fw.vw(157, 1440) fw.rem(50) fw.vw(157, 1440);
+      }
+
+    .worries-title {
+        padding: 0 fw.vw(28) fw.rem(38) 0;
+
+        @include fw.rps-sw(pc) {
+            padding: 0 0 fw.rem(38) 0;
+
+          }
+    }
+
+    .worries-subtitle {
+        padding: fw.rem(15) 0;
+        margin-right: fw.vw(28);
+
+        @include fw.rps-sw(pc) {
+            margin: initial;
+
+          }
+    }
+
+    .worries-container {
+        padding: fw.rem(20) 0 fw.rem(35) 0;
+
+        @include fw.rps-sw(pc) {
+            @include fw.flexset;
+            @include fw.fl-center(y);
+          }
+        
+        .worries-ul {
+            text-align: left;
+
+            @include fw.rps-sw(pc) {
+                padding-left: fw.vw(20);
+              }
+
+            li {
+                text-align: left;
+                white-space: nowrap;
+            }
+
+            li:before {
+                content:  "";
+                width: fw.rem(15);
+                height: fw.rem(15);
+                display: inline-block;
+                background-color: fw.$white-color;
+                border-radius: 50%;
+                margin-right: fw.rem(5);
+            }
+        }
+
+        .worries-img1 {
+            padding: fw.rem(20) 0 fw.rem(20) 0;
+            width: fw.vw(154);
+
+            @include fw.rps-sw(pc) {
+                width: fw.vw(120);
+            }
+        }
+
+        .worries-img2 {
+            padding: fw.rem(20) 0 fw.rem(20) 0;
+            width: fw.vw(300);
+        }
+
+        @include fw.rps-sw(pc) {
+            .worries-img1 {
+                padding-left: fw.vw(65);
+            }
+        }
+    }
+}

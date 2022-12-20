@@ -1,0 +1,104 @@
+/*
+===============
+section: concept layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.concept {
+    width: 100%;
+    text-align: center;
+    padding-bottom: fw.rem(113);
+
+    @include fw.rps-sw(pc) {
+        display: flex;
+    }
+
+    .concept-area {
+        text-align: center;
+
+        @include fw.rps-sw(pc) {
+            order: 2;
+        }
+
+        .concept-title {
+            width: 100%;
+            padding: fw.rem(86) fw.vw(27) fw.rem(40) fw.vw(27);
+            text-align: left;
+
+            @include fw.rps-sw(pc) {
+                padding: fw.rem(277) fw.vw(150, 1440) fw.rem(50) fw.vw(27, 1440);
+            }
+        }
+
+        .concept-text {
+            width: 100%;
+            padding: 0 fw.vw(27);
+            text-align: left;
+
+            @include fw.rps-sw(pc) {
+                padding: 0 fw.vw(150, 1440) fw.rem(50) fw.vw(27, 1440);
+                
+            }
+        }
+
+        .concept-block-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: fw.rem(12);
+            padding: fw.rem(40) fw.vw(27) fw.rem(70) fw.vw(27);
+
+            @include fw.rps-sw(pc) {
+                padding: fw.rem(20) fw.vw(150, 1440) fw.rem(72) fw.vw(27, 1440);
+            }
+    
+            .concept-block {
+                width: fw.vw(97);
+                height: fw.vw(83);
+                @include fw.flexset;
+                @include fw.fl-center(xy);
+                flex-direction: column;
+
+                @include fw.rps-sw(pc) {
+                    width: fw.vw(160, 1440);
+                    height: fw.vw(127, 1440);
+                }
+            }
+        }
+    }
+
+    .concept-img-area {
+        width: 100%;
+        text-align: left;
+
+        @include fw.rps-sw(pc) {
+            order: 1;
+            padding-top: fw.rem(124);
+        }
+
+        .concept-img1 {
+            width: fw.vw(287);
+
+            @include fw.rps-sw(pc) {
+                width: fw.vw(505, 1440);
+            }
+        }
+
+        .concept-img-area2 {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: fw.vw(42);
+
+            .concept-img2 {
+                width: fw.vw(157);
+                margin-top: fw.rem(47);
+
+                @include fw.rps-sw(pc) {
+                    width: fw.vw(275, 1440);
+                    margin-top: fw.rem(87);
+                }
+            }
+        }
+    }
+}

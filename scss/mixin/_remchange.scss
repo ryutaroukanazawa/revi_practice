@@ -1,0 +1,39 @@
+// ===============
+// px → rem change
+// ===============
+
+@function rem($pxrem, $baserem: 16) {
+
+  @return $pxrem / $baserem * 1rem;
+}
+
+
+// ===============
+// scss example
+// ===============
+// .foo {
+//   font-size: rem(36px);
+// }
+
+// .bar {
+//   font-size: rem(36px, 12px);
+// }
+
+// .baz {
+//   font-size: rem(1.5em);
+// }
+
+// ===============
+// compile example
+// ===============
+// .foo {
+//   font-size: 2.25rem;
+// }
+
+// .bar {
+//   font-size: 3rem;
+// }
+
+// .baz {
+//   font-size: 1.5em;
+// }

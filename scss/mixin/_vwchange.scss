@@ -1,0 +1,40 @@
+// ===============
+// px → vw change
+// ===============
+
+@use '../mixin/responsive' as rps;
+
+@function vw($pxvw, $basevw: 375) {
+ 
+  @return $pxvw / $basevw * 100vw;
+}
+
+// ===============
+// scss example
+// ===============
+// .foo {
+//   width: vw(40px);
+// }
+
+// .bar {
+//   width: vw(40px, 768px);
+// }
+
+// .baz {
+//   width: vw(50%);
+// }
+
+// ===============
+// compile example
+// ===============
+// .foo {
+//   width: 10.66667vw;
+// }
+
+// .bar {
+//   width: 5.20833vw;
+// }
+
+// .baz {
+//   width: 50%;
+// }

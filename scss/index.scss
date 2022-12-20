@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// base set
+@use 'base/destyle';
+@use 'base/base';
+
+// module set
+@use './module/pc-sp_none';
+@use './module/color-variation';
+@use './module/textsize';
+
+// layout set
+@use 'layout/lo-header';
+@use 'layout/lo-sec-concept';
+@use 'layout/lo-sec-worries';
+@use 'layout/lo-sec-resolution';
+@use 'layout/lo-sec-consultation';
+@use 'layout/lo-sec-lineup';
+@use 'layout/lo-sec-trigger';
+@use 'layout/lo-sec-obsession';
+@use 'layout/lo-sec-treatment';
+@use 'layout/lo-sec-step';
+@use 'layout/lo-sec-info';
+@use 'layout/lo-sec-sns';
+@use 'layout/lo-footer';
+
+
+

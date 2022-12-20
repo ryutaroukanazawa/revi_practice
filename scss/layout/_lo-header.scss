@@ -1,0 +1,139 @@
+/*
+===============
+header layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.header-container {
+    @include fw.bg-img('../../img/header_img-sp.png');
+    background-position: 50% fw.rem(0);
+    background-size: contain;
+    height: fw.vw(700);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @include fw.rps-sw(sp) {
+        background-position: 50% fw.rem(-82);
+        background-size: cover;
+        height: fw.vw(630);
+    }
+
+    @include fw.rps-sw(pc) {
+        @include fw.bg-img('../../img/header_img-pc.png');
+        background-position: 50% fw.rem(-10);
+        height: fw.vw(756, 1440);
+        min-height: initial;
+    }
+    
+    .logo-area {
+        width: 100%;
+        padding: fw.rem(30) 5% fw.rem(30);
+
+        @include fw.rps-sw(tab) {
+            padding: fw.vw(30, 1440) 5% fw.vw(30, 1440);
+        }
+    }
+
+    .main-area {
+        width: 100%;
+        padding: 0 5%;
+        position: relative;
+
+        @include fw.rps-sw(pc) {
+            padding: 0 15%;
+        }
+
+        .hd-title {
+            @include fw.rps-sw(tab) {
+                padding-top: 0;
+            }
+        }
+
+        .hd-sub-title1 {
+            padding: fw.rem(15) 0;
+
+            @include fw.rps-sw(pc) {
+                padding: fw.rem(20) 0 fw.rem(30);
+            }
+        }
+
+        .sideline {
+            display: block;
+            width: fw.vw(30);
+            border-top: 1px solid fw.$black-color;
+
+            @include fw.rps-sw(pc) {
+                width: fw.vw(43,1440);
+            }
+        }
+
+        .hd-sub-title2 {
+            padding: fw.rem(15) 0;
+
+            @include fw.rps-sw(pc) {
+                padding: fw.rem(40) 0 0;
+            }
+        }
+
+        .hd-deco {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+
+            @include fw.rps-sw(pc) {
+                top: 99%;
+                left: 32%;
+                right: initial;
+            }
+
+            .deco-img {
+                width: fw.vw(140);
+
+                @include fw.rps-sw(pc) {
+                    width: fw.vw(242, 1440);
+                }
+            }
+        }
+    }
+
+    #ps-fixed {
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .nav-area {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+
+        .hd-nav {
+
+            .nav-ul {
+                display: flex;
+                flex-direction: column;
+
+                @include fw.rps-sw(pc) {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                }
+
+
+                .nav-li {
+                    width: 100%;
+                    height: fw.rem(42);
+                    line-height: fw.rem(42);
+
+                    @include fw.rps-sw(pc) {
+                        width: fw.vw(279, 1440);
+                        height: fw.rem(52);
+                        line-height: fw.rem(52);
+                    }
+                }
+            }
+        }
+    }
+}

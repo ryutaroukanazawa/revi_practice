@@ -1,0 +1,134 @@
+/*
+===============
+section: worries layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.lineup {
+    width: 100%;
+    padding: fw.rem(70) 0 fw.rem(46);
+    text-align: center;
+    position: relative;
+
+    .lineup-deco {
+        width: 100vw;
+        height: fw.vw(222);
+        background: linear-gradient(270deg, #DBDBDB 0%, rgba(219, 219, 219, 0.09) 100%);
+        position: absolute;
+        bottom: 0;
+    }
+
+    .lineup-box {
+        width: 100%;
+        padding: 0 fw.vw(28);
+
+        .lineup-title {
+            padding-bottom: fw.rem(28);
+        }
+
+        .lineup-text {
+            text-align: left;
+        }
+
+        .lineup-img-area {
+
+            .lineup-container {
+                padding-top: fw.rem(70);
+                position: relative;
+
+                .lineup-img {
+                    width: fw.vw(320);
+                }
+
+                .lineup-container-text {
+                    padding-top: fw.rem(20);
+                    text-align: left;
+                }
+
+                .circle-shape {
+                    width: fw.vw(95);
+                    height: fw.vw(95);
+                    border-radius: 50%;
+                    display: flex;
+                    @include fw.fl-center(xy);
+                    position: absolute;
+                    top: 5%;
+                    left: -5%;
+                }
+            }
+
+            .lineup-container:nth-child(1) {
+                .lineup-container-text {
+                    padding-bottom: fw.rem(30);
+                }
+            }
+        }
+    }
+}
+
+@include fw.rps-sw(pc) {
+    .lineup {
+        padding: fw.rem(160) 0 fw.rem(94);
+    
+        .lineup-deco {
+            width: 100vw;
+            height: fw.vw(360, 1440);
+            background: linear-gradient(270deg, #DBDBDB 0%, rgba(219, 219, 219, 0.09) 100%);
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .lineup-box {
+            padding: 0 fw.vw(167, 1440);
+    
+            .lineup-title {
+                padding-bottom: fw.rem(53);
+                text-align: left;
+            }
+    
+            .lineup-text {
+                text-align: left;
+            }
+    
+            .lineup-img-area {
+                display: flex;
+                gap: fw.rem(115);
+                @include fw.fl-center(xy);
+                padding: fw.rem(145) fw.vw(206 - 167, 1440) 0;
+
+                .lineup-container {
+                    padding-top: initial;
+                    position: relative;
+    
+                    .lineup-img {
+                        width: fw.vw(477, 1440);
+                    }
+    
+                    .lineup-container-text {
+                        padding-top: fw.rem(32);
+                        text-align: left;
+                    }
+    
+                    .circle-shape {
+                        width: fw.vw(138, 1440);
+                        height: fw.vw(138, 1440);
+                        border-radius: 50%;
+                        display: flex;
+                        @include fw.fl-center(xy);
+                        position: absolute;
+                        top: -15%;
+                        left: -14%;
+                    }
+                }
+    
+                .lineup-container:nth-child(1) {
+                    .lineup-container-text {
+                        padding-bottom: initial;
+                    }
+                }
+            }
+        }
+    }    
+}

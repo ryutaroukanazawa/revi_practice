@@ -1,0 +1,31 @@
+/*
+===============
+color variation
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.darkblue-white-cv {
+  background-color: fw.$darkblue-color;
+  color: fw.$white-color;
+}
+
+.skyblue-white-cv {
+  background-color: fw.$skyblue-color;
+  color: fw.$white-color;
+}
+
+.white-darkblue-cv {
+  background-color: fw.$white-color;
+  color: fw.$darkblue-color;
+}
+
+.darkblue-text {
+  color: fw.$darkblue-color;
+}
+
+.skyblue-text {
+  color: fw.$skyblue-color;
+}
+  

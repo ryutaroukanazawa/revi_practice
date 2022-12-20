@@ -1,0 +1,64 @@
+/*
+===============
+section: step layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.step {
+    width: 100%;
+    padding: 0 fw.vw(63) fw.rem(106);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: fw.rem(30);
+    flex-direction: column;
+
+    .step-container {
+        
+        .step-img {
+            width: fw.vw(258);
+            padding-bottom: fw.rem(22);
+        }
+
+        .step-contents {
+            text-align: left;
+
+            .step-contents-title {
+                padding-bottom: fw.rem(10);
+            }
+        }
+    }
+}
+
+@include fw.rps-sw(pc) {
+    .step {
+        padding: 0 fw.vw(154, 1440) fw.rem(100);
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: fw.vw(120, 1440);
+        row-gap: fw.rem(58);
+        flex-direction: column;
+    
+        .step-container {
+            display: flex;
+            @include fw.fl-center(xy);
+            gap: fw.rem(41);
+
+            .step-img {
+                width: fw.vw(258, 1440);
+                padding-bottom: fw.rem(22);
+            }
+    
+            .step-contents {
+                text-align: left;
+    
+                .step-contents-title {
+                    padding-bottom: fw.rem(10);
+                }
+            }
+        }
+    }
+}

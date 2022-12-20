@@ -1,0 +1,129 @@
+/*
+===============
+section: worries layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.resolution {
+    width: 100%;
+    padding: fw.rem(60) fw.vw(27) 0;
+    text-align: center;
+
+    @include fw.rps-sw(pc) {
+        padding: fw.rem(185) fw.vw(150, 1440) fw.rem(160);
+    }
+
+    .resolution-title {
+        padding-bottom: fw.rem(47);
+
+        @include fw.rps-sw(pc) {
+            padding-bottom: fw.rem(100);
+        }
+    }
+
+    .resolution-container1, .resolution-container2 {
+
+        @include fw.rps-sw(pc) {
+            display: flex;
+            gap: fw.vw(148, 1440);
+            @include fw.fl-center(xy);
+        }
+    }
+
+    .resolution-container1 {
+
+        .resolution-img {
+            width: fw.vw(322);
+            padding-bottom: fw.rem(20);
+
+            @include fw.rps-sw(pc) {
+                width: fw.vw(480, 1440);
+            }
+        }
+
+        .resolution-area {
+            padding-bottom: fw.rem(50);
+
+            @include fw.rps-sw(pc) {
+                margin-top: fw.rem(100);
+            }
+
+            .resolution-area-title {
+                text-align: left;
+                padding-bottom: fw.rem(15);
+
+                @include fw.rps-sw(pc) {
+                    margin-top: fw.rem(35);
+                }
+            }
+
+            .resolution-areabox {
+                width: fw.vw(320);
+                height: fw.vw(44);
+                line-height: fw.vw(44);
+
+                @include fw.rps-sw(pc) {
+                    width: fw.vw(397, 1440);
+                    height: fw.vw(69, 1440);
+                    line-height: fw.vw(69, 1440);
+                }
+            }
+
+            .resolution-text {
+                text-align: left;
+                padding-top: fw.rem(24);
+            }
+        }
+    }
+
+    .resolution-container2 {
+        @include fw.rps-sw(pc) {
+            padding-top: fw.rem(50);
+        }
+
+        .resolution-img {
+            width: fw.vw(322);
+            padding-bottom: fw.rem(20);
+            
+            @include fw.rps-sw(pc) {
+                order: 2;
+            }
+
+            @include fw.rps-sw(pc) {
+                width: fw.vw(480, 1440);
+            }
+        }
+
+        .resolution-area {
+            padding-bottom: fw.rem(50);
+
+            @include fw.rps-sw(pc) {
+                order: 1;
+            }
+
+            .resolution-area-title {
+                text-align: left;
+                padding-bottom: fw.rem(15);
+            }
+
+            .resolution-areabox {
+                width: fw.vw(320);
+                height: fw.vw(44);
+                line-height: fw.vw(44);
+
+                @include fw.rps-sw(pc) {
+                    width: fw.vw(397, 1440);
+                    height: fw.vw(69, 1440);
+                    line-height: fw.vw(69, 1440);
+                }
+            }
+
+            .resolution-text {
+                text-align: left;
+                padding-top: fw.rem(24);
+            }
+        }
+    }
+}

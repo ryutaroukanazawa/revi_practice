@@ -1,0 +1,55 @@
+/*
+===============
+section: trigger layout
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+.trigger {
+    width: 100%;
+    padding: fw.rem(77) fw.vw(28) fw.rem(69);
+    text-align: center;
+
+    .trigger-container {
+        border: 1px solid fw.$black-color;
+        border-radius: fw.rem(10);
+        padding: fw.rem(30) fw.vw(21);
+        margin-top: fw.rem(50);
+        text-align: left;
+
+        .trigger-container-title {
+            padding-bottom: fw.rem(20);
+            border-bottom: 1px solid fw.$black-color;
+        }
+
+        .trigger-container-text {
+            padding-top: fw.rem(20);
+        }
+    }
+}
+
+@include fw.rps-sw(pc) {
+    .trigger {
+        padding: fw.rem(160) fw.vw(158, 1440) fw.rem(160);
+
+        .trigger-box {
+            display: flex;
+            gap: fw.rem(74);
+    
+            .trigger-container {
+                width: fw.vw(525);
+                padding: fw.rem(52) fw.vw(39, 1440);
+                margin-top: fw.rem(74);
+        
+                .trigger-container-title {
+                    padding-bottom: fw.rem(30);
+                }
+        
+                .trigger-container-text {
+                    padding-top: fw.rem(30);
+                }
+            }
+        }
+    }    
+}

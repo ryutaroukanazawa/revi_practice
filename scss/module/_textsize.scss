@@ -1,0 +1,545 @@
+/*
+===============
+font setting
+===============
+*/
+
+@use '../layout/global-forward' as fw;
+
+/*
+===============
+header fontsize
+===============
+*/
+.hd-title-size {
+  @include fw.fontset(fw.$sub-font1, fw.rem(46), 400);
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$sub-font1, fw.vw(85, 1440), 400);
+  }
+}
+
+.hd-sub-title1-size {
+  @include fw.fontset(fw.$main-font, fw.rem(16), 400, fw.rem(23));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 400, fw.rem(50));
+
+  }
+}
+
+.hd-sub-title2-size {
+  @include fw.fontset(fw.$main-font, fw.rem(14), 500);
+  letter-spacing: 0.1em;
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(23, 1440), 500);
+  }
+}
+
+.nav-text-size {
+  @include fw.fontset(fw.$main-font, fw.rem(14), 600);
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(18, 1440), 600);
+  }
+}
+
+/*
+===============
+concept fontsize
+===============
+*/
+.concept-title-size {
+  @include fw.fontset(fw.$main-font, fw.vw(24), 500, fw.vw(45));
+  letter-spacing: 0.1em;
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(34, 1440), 500, fw.vw(60, 1440));
+  }
+}
+
+.concept-text-size {
+  @include fw.fontset(fw.$main-font, fw.vw(13), 500, fw.vw(30));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(18, 1440), 500, fw.vw(30, 1440));
+    
+  }
+}
+
+.concept-blocktext-lgsize {
+  @include fw.fontset(fw.$main-font, fw.vw(15), 600, fw.rem(8));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(24, 1440), 600, fw.rem(12));
+  }
+}
+
+.concept-blocktext-xlsize {
+  @include fw.fontset(fw.$main-font, fw.vw(17), 600, fw.rem(8));
+
+  @include fw.rps-sw(pc) {
+   @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 600, fw.rem(14));
+  }
+}
+
+.concept-blocktext-smsize {
+  @include fw.fontset(fw.$main-font, fw.vw(10), 600, fw.rem(8));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(12, 1440), 600, fw.rem(6));
+  }
+}
+
+/*
+===============
+worries fontsize
+===============
+*/
+.worries-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(34, 1440), 500, fw.vw(50, 1440));
+  }
+}
+
+.worries-subtitle {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 500, fw.vw(25));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(26, 1440), 500, fw.vw(28, 1440));
+  }
+
+}
+
+.worries-ul {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 500, fw.vw(35));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(22, 1440), 500, fw.vw(50, 1440));
+
+  }
+}
+
+/*
+===============
+resolution fontsize
+===============
+*/
+.resolution-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(36, 1440), 500, fw.vw(50, 1440));
+  }
+}
+
+.resolution-area-title {
+  @include fw.fontset(fw.$sub-font2, fw.vw(16), 400);
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$sub-font2, fw.vw(24, 1440), 400);
+  }
+}
+
+.resolution-areabox {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 500);
+  letter-spacing: 0.1em;
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 500);
+  }
+}
+
+.resolution-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+
+  @include fw.rps-sw(pc) {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(42, 1440));
+  }
+}
+
+/*
+===============
+consultation fontsize
+===============
+*/
+.consultation-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(30));
+}
+
+.consultation-text {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(32));
+}
+
+.info-buttom {
+  @include fw.fontset(fw.$main-font, fw.vw(16), 500);
+}
+
+@include fw.rps-sw(pc) {
+  .consultation-title {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 500, fw.vw(30, 1440));
+  }
+  
+  .consultation-text {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(30, 1440));
+  }
+  
+  .info-buttom {
+    @include fw.fontset(fw.$main-font, fw.vw(22, 1440), 500);
+  }
+}
+
+/*
+===============
+consultation fontsize
+===============
+*/
+.lineup-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+}
+
+.lineup-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+.lineup-container-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+.circle-text {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 600, fw.vw(18));
+}
+
+@include fw.rps-sw(pc) {
+  .lineup-title {
+    @include fw.fontset(fw.$main-font, fw.vw(36, 1440), 500, fw.vw(36, 1440));
+    letter-spacing: initial;
+  }
+  
+  .lineup-text {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(34, 1440));
+  }
+  
+  .lineup-container-text {
+    @include fw.fontset(fw.$main-font, fw.vw(22, 1440), 500, fw.vw(34, 1440));
+    letter-spacing: 0.08em;
+    color: fw.$darkblue-color;
+  }
+  
+  .circle-text {
+    @include fw.fontset(fw.$main-font, fw.vw(24, 1440), 600, fw.vw(29, 1440));
+  }
+}
+
+/*
+===============
+trigger fontsize
+===============
+*/
+.trigger-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+}
+
+.trigger-container-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(30));
+}
+
+.trigger-container-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+@include fw.rps-sw(pc) {
+  .trigger-title {
+    @include fw.fontset(fw.$main-font, fw.vw(36, 1440), 500, fw.vw(52, 1440));
+    letter-spacing: 0.08em;
+  }
+  
+  .trigger-container-title {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 500, fw.vw(40, 1440));
+  }
+  
+  .trigger-container-text {
+    @include fw.fontset(fw.$main-font, fw.vw(16, 1440), 500, fw.vw(30, 1440));
+  } 
+}
+
+/*
+===============
+obsession fontsize
+===============
+*/
+.obsession-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+  color: fw.$white-color;
+}
+
+.obsession-container-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 600, fw.vw(30));
+}
+
+.obsession-container-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+@include fw.rps-sw(pc) {
+  .obsession-title {
+    @include fw.fontset(fw.$main-font, fw.vw(36, 1440), 600, fw.vw(52, 1440));
+    letter-spacing: initial;
+  }
+  
+  .obsession-container-title {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 600, fw.vw(30, 1440));
+  }
+  
+  .obsession-container-text {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(38, 1440));
+    letter-spacing: 0.08em;
+  }
+}
+
+/*
+===============
+treatment fontsize
+===============
+*/
+.treatment-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 500, fw.vw(29));
+  letter-spacing: 0.06em;
+}
+
+.treatment-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+@include fw.rps-sw(pc) {
+  .treatment-title {
+    @include fw.fontset(fw.$main-font, fw.vw(38, 1440), 500, fw.vw(38, 1440));
+    letter-spacing: 0.1em;
+  }
+  
+  .treatment-text {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(40, 1440));
+  }
+}
+
+/*
+===============
+step fontsize
+===============
+*/
+.step-contents-title {
+  @include fw.fontset(fw.$sub-font2, fw.vw(18), 500, fw.vw(29));
+  letter-spacing: 0.04em;
+}
+
+.step-contents-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(23));
+}
+
+@include fw.rps-sw(pc) {
+  .step-contents-title {
+    @include fw.fontset(fw.$sub-font2, fw.vw(28, 1440), 500, fw.vw(29, 1440));
+    letter-spacing: 0.04em;
+  }
+  
+  .step-contents-text {
+    @include fw.fontset(fw.$main-font, fw.vw(14, 1440), 500, fw.vw(28, 1440));
+  }
+}
+
+/*
+===============
+info fontsize
+===============
+*/
+.info-title {
+  @include fw.fontset(fw.$sub-font2, fw.vw(20), 600, fw.vw(28));
+  letter-spacing: 0.2em;
+}
+
+.info-title-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 600, fw.vw(23));
+}
+
+.info-tel-number {
+  @include fw.fontset(fw.$sub-font2, fw.vw(25), 700, fw.vw(26));
+  letter-spacing: 0.05em;
+}
+
+.info-text1 {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 600, fw.vw(23));
+  letter-spacing: 0.1em;
+}
+
+.info-text2 {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 600, fw.vw(23));
+}
+
+.info-input-title {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 600, fw.vw(20));
+  
+  .info-red {
+    color: #E03333;
+  }
+}
+
+.info-input-textboxarea {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(17));
+  letter-spacing: 0.1em;
+}
+
+.info-privacy {
+  @include fw.fontset(fw.$main-font, fw.vw(16), 600, fw.vw(29));
+}
+
+.info-send {
+  @include fw.fontset(fw.$main-font, fw.vw(18), 500, fw.vw(18));
+}
+
+.info-value1, .info-value2 {
+  color: #B0B0B0;
+}
+
+.info-unferline {
+  color: #0075FF;
+}
+
+
+@include fw.rps-sw(pc) {
+  .info-title {
+    @include fw.fontset(fw.$sub-font2, fw.vw(30, 1440), 600, fw.vw(28, 1440));
+    letter-spacing: 0.2em;
+  }
+  
+  .info-title-text {
+    @include fw.fontset(fw.$main-font, fw.vw(14, 1440), 600, fw.vw(30, 1440));
+  }
+  
+  .info-tel-number {
+    @include fw.fontset(fw.$sub-font2, fw.vw(50, 1440), 700, fw.vw(40, 1440));
+    letter-spacing: 0.05em;
+  }
+  
+  .info-text1 {
+    @include fw.fontset(fw.$main-font, fw.vw(26, 1440), 600, fw.vw(40, 1440));
+    letter-spacing: 0.1em;
+  }
+  
+  .info-text2 {
+    @include fw.fontset(fw.$main-font, fw.vw(14, 1440), 600, fw.vw(30, 1440));
+    color: fw.$darkblue-color
+  }
+  
+  .info-input-title {
+    @include fw.fontset(fw.$main-font, fw.vw(18, 1440), 600, fw.vw(25,1440));
+    
+    .info-red {
+      color: #E03333;
+    }
+  }
+
+  .info-input-textboxarea {
+    @include fw.fontset(fw.$main-font, fw.vw(18, 1440), 500, fw.vw(26, 1440));
+    letter-spacing: 0.1em;
+    color: #B0B0B0;
+  }  
+  
+  .info-privacy {
+    @include fw.fontset(fw.$main-font, fw.vw(16, 1440), 600, fw.vw(29, 1440));
+  }
+  
+  .info-send {
+    @include fw.fontset(fw.$main-font, fw.vw(22, 1440), 500, fw.vw(32, 1440));
+  }
+}
+
+/*
+===============
+sns fontsize
+===============
+*/
+.sns-text1 {
+  @include fw.fontset(fw.$main-font, fw.vw(16), 500, fw.vw(29));
+  letter-spacing: 0.1em;
+}
+
+.sns-title {
+  @include fw.fontset(fw.$main-font, fw.vw(20), 600);
+  letter-spacing: 0.2em;
+}
+
+.sns-text2 {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 600, fw.vw(23));
+}
+
+.sns-button {
+  @include fw.fontset(fw.$main-font, fw.vw(14), 600, fw.vw(20));
+  letter-spacing: 0.1em;
+}
+
+@include fw.rps-sw(pc) {
+  .sns-text1 {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 500, fw.vw(29, 1440));
+    letter-spacing: 0.1em;
+  }
+  
+  .sns-title {
+    @include fw.fontset(fw.$main-font, fw.vw(28, 1440), 600);
+    letter-spacing: 0.1em;
+  }
+  
+  .sns-text2 {
+    @include fw.fontset(fw.$main-font, fw.vw(14, 1440), 600, fw.vw(30, 1440));
+    color: #606182;
+  }
+  
+  .sns-button {
+    @include fw.fontset(fw.$main-font, fw.vw(22, 1440), 500, fw.vw(22, 1440));
+    letter-spacing: 0.1em;
+  }
+}
+
+/*
+===============
+footer fontsize
+===============
+*/
+.footer-title {
+  @include fw.fontset(fw.$main-font, fw.vw(15), 700);
+  letter-spacing: 0.1em;
+}
+
+.footer-text {
+  @include fw.fontset(fw.$main-font, fw.vw(12), 500, fw.vw(29));
+  letter-spacing: 0.1em;
+}
+
+.footer-copyright {
+  @include fw.fontset(fw.$sub-font1, fw.vw(10), 600, fw.vw(12));
+  letter-spacing: 0.1em;
+}
+
+@include fw.rps-sw(pc) {
+  .footer-title {
+    @include fw.fontset(fw.$main-font, fw.vw(20, 1440), 700, fw.vw(29, 1440));
+    letter-spacing: 0.1em;
+  }
+  
+  .footer-text {
+    @include fw.fontset(fw.$main-font, fw.vw(16, 1440), 500, fw.vw(29, 1440));
+    letter-spacing: 0.1em;
+  }
+  
+  .footer-copyright {
+    @include fw.fontset(fw.$sub-font1, fw.vw(14, 1440), 600, fw.vw(17, 1440));
+    letter-spacing: 0.1em;
+  }
+}

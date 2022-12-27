@@ -7,7 +7,7 @@ header layout
 @use '../layout/global-forward' as fw;
 
 .header-container {
-    @include fw.bg-img('../../img/header_img-sp.png');
+    @include fw.bg-img('../img/header_img-sp.png');
     background-position: 50% fw.rem(0);
     background-size: contain;
     height: fw.vw(700);
@@ -22,7 +22,7 @@ header layout
     }
 
     @include fw.rps-sw(pc) {
-        @include fw.bg-img('../../img/header_img-pc.png');
+        @include fw.bg-img('../img/header_img-pc.png');
         background-position: 50% fw.rem(-10);
         height: fw.vw(756, 1440);
         min-height: initial;

@@ -7,7 +7,7 @@ section: obsession layout
 @use '../layout/global-forward' as fw;
 
 .obsession {
-    @include fw.bg-img('../../img/obsession_background-sp.png');
+    @include fw.bg-img('../img/obsession_background-sp.png');
     background-size: contain;
     background-position: center 0%;
     width: 100%;
@@ -40,7 +40,7 @@ section: obsession layout
 
 @include fw.rps-sw(pc) {
     .obsession {
-        @include fw.bg-img('../../img/obsession_background-pc.png');
+        @include fw.bg-img('../img/obsession_background-pc.png');
         background-size: cover;
         background-position: center 0%;
         padding: fw.vw(204, 1440) fw.vw(200, 1440) fw.rem(280);

@@ -1268,7 +1268,7 @@ header layout
 ===============
 */
 .header-container {
-  background-image: url("../../img/header_img-sp.png");
+  background-image: url("../img/header_img-sp.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1288,7 +1288,7 @@ header layout
 }
 @media screen and (min-width: 900px) {
   .header-container {
-    background-image: url("../../img/header_img-pc.png");
+    background-image: url("../img/header_img-pc.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1935,7 +1935,7 @@ section: obsession layout
 ===============
 */
 .obsession {
-  background-image: url("../../img/obsession_background-sp.png");
+  background-image: url("../img/obsession_background-sp.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1963,7 +1963,7 @@ section: obsession layout
 
 @media screen and (min-width: 900px) {
   .obsession {
-    background-image: url("../../img/obsession_background-pc.png");
+    background-image: url("../img/obsession_background-pc.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

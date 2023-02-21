@@ -9,16 +9,16 @@ sp-pc display: none;
     display: block !important;
   }
   
-  .pc {
+.pc {
+  display: none !important;
+}
+
+@include rps.rps-sw(pc) {
+  .sp {
     display: none !important;
   }
-  
-  @include rps.rps-sw(pc) {
-    .sp {
-      display: none !important;
-    }
-    .pc {
-      display: block !important;
-    }
+  .pc {
+    display: block !important;
   }
+}
   

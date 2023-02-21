@@ -38,6 +38,7 @@ window.addEventListener('scroll', function () {
   // headerの高さを取得
   var hd_height = "-" + $("#target-hd").height();
   
+  console.log(target_position1);
   // headerが画面内に入っている&&headerの高さを越したら
     if (target_position1 <= window.innerHeight && hd_height <= target_position1) {
       fixed.style.position = "absolute";
